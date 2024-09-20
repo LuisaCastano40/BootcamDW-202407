@@ -1,0 +1,36 @@
+/*
+COMENTARIOS EN CSS
+*/
+
+/* 
+    CSS -> Cascading Style Sheets
+    (hojas de estilo en cascada) 
+
+    ETILIZAR COMPONENTES EN HTML
+    clases
+    nombre de la etiqueta
+    variables
+*/
+
+/* PROPIEDADES MÁS IMPORTANTES */
+body {
+    /* color de fondo */
+    background-color: red ;
+    /* color del texto */
+    color: white;
+     /* tipo de letra */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    /* tamaño letra */
+    font-size: 100px;
+    background-color: blueviolet;
+}
+
+ul{
+    background-color: aqua;
+    color: black;
+}
+
+
