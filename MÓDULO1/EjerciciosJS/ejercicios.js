@@ -48,9 +48,40 @@ if(nombreUsuario){
 
 
 //3. Hacer un programa que pida al usuario un número entero y muestre los valores desde cero hasta el número ingresado.
-let numero = parseInt(prompt('Ingrese un número entero'));
+/*let numero = parseInt(prompt('Ingrese un número entero'));
 console.log(numero)
 for(let i = 0 ; i<= numero ; i++){
     console.log(i);
-}
+}*/
 
+
+//5. Hacer un programa que muestre los días de la semana.
+// alt + 91 o shift + {}
+// mala práctica -> let array = [1,2,3,3, 'martes', false]
+let diasSemana = ['lunes' , 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
+
+// mostrando el arreglo
+console.log(diasSemana);
+// mostrando un elemento dentro del arreglo, usando su índice
+
+// el nombreDelArreglo[el index]
+/*console.log(diasSemana[0]);
+console.log(diasSemana[1]);
+console.log(diasSemana[4]);
+console.log(diasSemana[3]);
+console.log(diasSemana[4]);
+console.log(diasSemana[5]);
+console.log(diasSemana[6]);*/
+
+// OPCION OPTIMIZADA CON CICLOS
+// ForEach -> es un cíclo para recorrer arreglos de datos
+// el ciclo termina cuando no hayan más elementos dentro de mi arreglo de datos
+
+// primero va el arreglo y luego el método
+//forEach() -> es un método UNICAMENTE PARA ARREGLOS
+/*diasSemana.forEach(
+    // función flecha-> FUNCIONES -> Acciones que se deben ejecutar
+    dia => {
+        console.log(dia); 
+    }
+)*/
