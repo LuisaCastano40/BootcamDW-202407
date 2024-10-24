@@ -102,3 +102,10 @@ const suma2 = (num1, num2) => {
 suma2(2,8);
 // Vamos a ver qué retorna
 console.log('Acá estoy mostrando lo que retorna suma2 ' + suma2(2,8));
+
+
+
+
+
+console.log('Hola Mundo')
+console.log("Hola Mundo")
