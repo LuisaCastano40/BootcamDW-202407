@@ -18,4 +18,4 @@ export async function connectionMongo(){
     }catch(error){
         console.error('Error de conexión: ' + error);
     }
-}
+} 
