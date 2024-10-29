@@ -5,15 +5,17 @@
 import express from 'express'; //ECMAS 6
 import dotenv from 'dotenv'; //dependencia para manejar variables de entorno
 import { connectionMongo } from './src/config/dataBase.js';
+import { productRouter } from './src/routes/product.routes.js'; //importé mis rutas
 
 
 // 2. configurar el uso de nuestro servidor
 const app = express(); 
 dotenv.config(); //configurando para poder usar variables de entorno
 connectionMongo();
-
-
 const port = process.env.PORT//6000, 9000
+
+// Le indico las rutas que debe utilizar
+app.use('/productos', productRouter);
 
 
 // 3. ejecutar el servidor en nuestro computador

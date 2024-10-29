@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 // 2. Crearmos una función para conectar la base de datos
 // Función asincrónica -> necesitamos esperar una respuesta
 
+// funciones declarativas
 export async function connectionMongo(){
     // debes controlar los errores -> boque try - catch
     // try  -> gestiona cuando la respuesta es positiva
