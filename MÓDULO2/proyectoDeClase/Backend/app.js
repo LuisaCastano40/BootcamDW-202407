@@ -15,6 +15,7 @@ connectionMongo();
 const port = process.env.PORT//6000, 9000
 
 // Le indico las rutas que debe utilizar
+app.use(express.json()); //para poder usar formato json -> crear y actualizar 
 app.use('/productos', productRouter);
 
 
