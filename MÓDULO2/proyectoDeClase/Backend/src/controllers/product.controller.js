@@ -66,7 +66,33 @@ export const getProduct = async (request, response) => {
 export const putProductById = async (request, response) => {
 
     // LÓGICA DE LA PETICIÓN PUT
-    return response.json({"mensajito": "FUNCIONA LA PETICIÓN PUT"});
+    try {
+        let idForPut = request.params.id; //el parámetro id del producto que queremos actualizar
+        let dataForUpdate = request.body; //pasarle la información actualizada
+
+                                                //2 parámetros, primero el id y luego la info actualizada
+        const productUpdated = await productModel.findByIdAndUpdate(idForPut, dataForUpdate);
+
+        // validación cuando el id no es correcto o no existe
+        // !productUpdated -> negación de una variable -> no hay nada en esa variable -> falsa
+        if(!productUpdated){
+            return response.status(404).json({
+                mensaje: 'Lo siento! No se encontró producto para actualizar'
+            });
+        }
+
+        return response.status(200).json({
+            mensaje: 'Se actualizó el producto correctamente',
+            datos: productUpdated
+        });
+
+        
+    } catch (error) {
+        return response.status(400).json({
+            mensaje: 'Ocurrió un error al actualizar producto',
+            problem: error || error.message 
+        });
+    }
 }
 
 // petición DELETE -> para eliminar productos
@@ -74,6 +100,21 @@ export const putProductById = async (request, response) => {
 export const deleteProductById = async (request, response) => {
 
     // LÓGICA DE LA PETICIÓN DELETE
-    return response.json({"mensajito": "FUNCIONA LA PETICIÓN DELETE"});
+    try {
+        let idForDelete = request.params.id;
+        // lo que se elimina no lo tenemos que guardar en variables
+        // escuentreme el producto con ese id y elimínelo
+       await productModel.findByIdAndDelete(idForDelete);
+
+        return response.status(200).json({
+            mensaje: 'Producto eliminado satisfactoriamente'
+        });
+        
+    } catch (error) {
+        return response.status(400).json({
+            mensaje: 'Ocurrió un error al eliminar producto',
+            problem: error || error.message 
+        });
+    }
 }
 

@@ -13,10 +13,11 @@ const productSchema = new mongoose.Schema({
     category:{type:String, required: false},
     price: {type: Number, required: true},
     stock: {type: Number, required: true},
-    isAvailable: {type: Boolean} //true o false -> buleano
+    isAvailable: {type: Boolean}, //true o false -> buleano
+    
 });
 
 // 3. Decirle a la base de datos que se cree una colección con el esquema anterior
-//el primer parámetro, es el nombre de la colección
+//el primer parámetro, es el nombre de la colección y mongoose lo pluraliza
 //el segundo parámetro, es la estructura de datos
 export const productModel = mongoose.model('product', productSchema);
