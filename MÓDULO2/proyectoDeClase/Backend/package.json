@@ -13,12 +13,11 @@
   "author": "Luisa Castaño",
   "license": "ISC",
   "description": "Proyecto de práctica backend con Node",
-  "devDependencies": {
-    "nodemon": "^3.1.7"
-  },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.7.2"
+    "mongoose": "^8.8.0",
+    "nodemon": "^3.1.7"
   }
 }
