@@ -3,6 +3,7 @@
 // 1. importar mis controladores y las dependencias necesarias
 import { getProduct, postProduct, putProductById, deleteProductById } from '../controllers/product.controller.js';
 import express from 'express'; //también nos ayuda a hacer las rutas para las peticiones -> Router
+import auth from '../middleware/auth.js';
 
 
 // 2. Configurar el router de express
@@ -16,10 +17,10 @@ export const productRouter = express.Router();
 productRouter.get('/obtener', getProduct);
 
 // Ruta para la petición POST -> crear 
-productRouter.post('/crear', postProduct);
+productRouter.post('/crear', auth('admin') , postProduct);
 
 // Ruta para la petición PUT -> actualiza la información
-productRouter.put('/actualizar/:id', putProductById );
+productRouter.put('/actualizar/:id', auth('admin'), putProductById );
 
 // Ruta para la petición DELETE -> eliminar
-productRouter.delete('/eliminar/:id', deleteProductById);
+productRouter.delete('/eliminar/:id',auth('admin'), deleteProductById);
