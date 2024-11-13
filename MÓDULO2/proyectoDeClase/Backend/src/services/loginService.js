@@ -47,7 +47,7 @@ const login = async (request, response) => {
         }
 
 
-        // VERIFICAR PERMISOS ----------------------------------------------------------
+        // VALIDACIÓN 3: VERIFICAR PERMISOS ----------------------------------------------------------
         // TODOS MIS USUARIOS TENGAS ESTA INFO EN SU TOKEN
         const payload = {
             id:userFound._id,
@@ -100,3 +100,6 @@ const login = async (request, response) => {
     }
 
 }
+
+// 3. exportar la función
+export default login;
