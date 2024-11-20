@@ -21,6 +21,7 @@
    - [Modelo Vista-Controlador (MVC)](#3-modelo-vista-controlador-mvc)
 5. [Autenticación con JWT](#4-autenticación-con-jwt)
 6. [Recursos Adicionales](#recursos-adicionales)
+7. [Videos de las sesiones](#videos-de-las-sesiones)
 
 ---
 
@@ -131,6 +132,26 @@ Esta estructura organiza el proyecto en tres componentes principales:
 
   <li><a href="https://www.youtube.com/watch?v=nGBsgjVxaw8&list=PLpD_vYWjZt11y0RdptTt9JkIafhOc-evL&index=58" target="_blank">Verificación de Token y validación rol administrador (Fin del tema JWT)</a> 🎥</li>
 </ul> -->
+
+## Videos de las Sesiones
+
+| Fecha       | Enlace                                                                                                            | Temas                                                                                                                                      |
+|-------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| 21 octubre  | [Ver video: Inicio con Node](https://www.youtube.com/watch?v=yKGLH-ThpgQ&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=34)         | - **Repaso general JS** hasta minuto **1:11:22**<br>- **Fundamentos de Node.js** inicia en **2:13:31**<br>- **Objetos JSON** inicia en **2:50:00** |
+| 22 octubre  | [Ver video](https://www.youtube.com/watch?v=56Ozs5U6iRY&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=36)     | - Temas pendientes de agregar                                                                                                             |
+| 23 octubre         | [Ver video](https://www.youtube.com/watch?v=QtB4YjJim2E&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=37) | - Temas pendientes de agregar                                                                                                             |
+| 24 octubre         | [Ver video](https://www.youtube.com/watch?v=04JIN9cDM90&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=9) | - Temas pendientes de agregar                                                                                                             |
+| 25 octubre         | [Ver video](https://www.youtube.com/watch?v=1ijn6sV3Nk8&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=8) | - Temas pendientes de agregar                                                                                                             |
+| 28 octubre         | [Ver video](https://www.youtube.com/watch?v=UGszbfT3l2A&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=38) | - Temas pendientes de agregar                                                                                                             |
+| 29 octubre         | [Ver video](https://www.youtube.com/watch?v=PyCvh_3TL_E&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=39) | - Temas pendientes de agregar                                                                                                             |
+| 30 octubre         | [Ver video]() | - Temas pendientes de agregar                                                                                                             |
+| 31 octubre         | [Ver video](https://www.youtube.com/watch?v=-UpuNrNyjK8&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=7) | - Temas pendientes de agregar                                                                                                             |
+| 1 Noviembre        | [Ver video](https://www.youtube.com/watch?v=cgg9cciZ3KI&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=6) | - Temas pendientes de agregar                                                                                                             |
+| 5 Noviembre         | [Ver video]() | - Temas pendientes de agregar                                                                                                             |
+| 6 Noviembre         | [Ver video](https://www.youtube.com/watch?v=-nN-KmaXWTc&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=40) | - Temas pendientes de agregar                                                                                                             |
+| 7 Noviembre         | [Ver video](https://www.youtube.com/watch?v=JiqieaW1GAI&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=5) | - Temas pendientes de agregar                                                                                                             |
+| 8 Noviembre        | [Ver video](https://www.youtube.com/watch?v=vjKmU_H4KC0&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=4) | - Temas pendientes de agregar                                                                                                             |
+| 12 Noviembre         | [Ver video](https://www.youtube.com/watch?v=bsUI6vkESxk&list=PLpD_vYWjZt12ENyeed6ub4kyPY7jyteXx&index=41) | - Temas pendientes de agregar                                                                                                             |
 
 <!-- Separador -->
 <hr>

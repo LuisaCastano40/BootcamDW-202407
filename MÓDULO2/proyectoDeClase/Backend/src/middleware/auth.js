@@ -25,13 +25,13 @@ function auth(requiredRole) {
        // Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MmFkNzUxOGViZmUwMmRjNTY3MWIwZSIsIm5hbWUiOiJwZXBpdG8gcMOpcmV6IiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNzMxNDU0NjEyLCJleHAiOjE3MzE0NTgyMTJ9.V6T1Z5OHMWCzNoZgaCAsRmw8KNA968K6hSARp5Msj5c
         // Vamos a quitar el bearer para poder verificar bien el token
         token = token.split(' ')[1];
-        console.log('token después de separarlo del Bearer ' + token);
+        console.log('token después de separarlo del Bearer' + token);
 
         // Menejo de errores
 
         try {
             const decoded = await verifyToken(token);
-            console.log('token decodificado ' + decoded);
+            console.log('token decodificado ' , decoded);
 
             // VALIDACIÓN 3: Verificar rol ->la lógica la ponen ustedes
             // SI se requiere que se administrador -> requiredRole === 'admin'
