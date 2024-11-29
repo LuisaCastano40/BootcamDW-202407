@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+// INFORMACIÓN DE MI COMPONENTE, qué cosas usar en ese componente
 @Component({
-  selector: 'app-root',
+  selector: 'app-root', //es lo que nos crea la etiqueta de html
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet], //aquí va todo lo que necesitamos usar de nuestras importaciones
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'Fronted';
+  
+// DENTRO DE ESTO viene mi código -> lógica de programación
+ miVariable : string = '';
+
+//  así trabajamos en js
+ /*let miVariable2 = '';*/
+
 }
