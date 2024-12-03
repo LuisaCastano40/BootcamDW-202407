@@ -1,4 +1,4 @@
-// En este archivo estaremos haciendo toda la lógica necesaria para gestionar los inicios de sesión de los usuarios}
+// En este archivo estaremos haciendo toda la lógica necesaria para gestionar los inicios de sesión de los usuarios
 // PUEDE QUE ESTA LÓGICA CAMBIE PARA CADA PROYECTO FINAL
 
 

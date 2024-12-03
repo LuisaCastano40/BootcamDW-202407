@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { NavBarComponent } from '../../componentes/nav-bar/nav-bar.component';
 
 // configuramos el componente
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [],
+  imports: [NavBarComponent],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })

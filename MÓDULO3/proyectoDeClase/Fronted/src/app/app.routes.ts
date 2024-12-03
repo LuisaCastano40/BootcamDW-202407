@@ -10,6 +10,7 @@ import { InventarioComponent } from './paginas/admin/inventario/inventario.compo
 import { UsuariosComponent } from './paginas/admin/usuarios/usuarios.component';
 
 // Nos creamos las rutas para cada componente página
+// las rutas son SIN /
 export const routes: Routes = [
     { path: '', component: InicioComponent, title: 'Inicio' }, //ruta para página inicio
     { path: 'productos', component: ProductosComponent, title: 'Productos' },
