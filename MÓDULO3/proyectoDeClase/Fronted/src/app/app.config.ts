@@ -9,6 +9,9 @@ import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 // Importar la dependencia para gestionar mensajes de respuesta
 import { provideToastr } from 'ngx-toastr';
+// Importamos proveedor de animaciones
+import { provideAnimations } from '@angular/platform-browser/animations';
+
 
 import { routes } from './app.routes';
 
@@ -26,6 +29,9 @@ export const appConfig: ApplicationConfig = {
       preventDuplicates: true, //evitar duplicados
       easeTime: 0, //cuánto tiempo pasa antes de que aparezca en pantalla
       progressBar: true //si queremos o no la barra de progreso
-    })
+    }),
+    // Posibles errores por compatibilidad - tener presente
+    provideAnimations(),
+
   ]
 };
