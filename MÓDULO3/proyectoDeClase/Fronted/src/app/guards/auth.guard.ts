@@ -18,6 +18,11 @@ export const authGuard: CanActivateFn = (route, state) => {
   // 1. inyectar dependencias y/o servicios
   const _loginService = inject(LoginService);
   const _router = inject(Router);
+  
+  console.log('Verificando acceso...', {
+    logueado: _loginService.estaLogueado(),
+    esAdmin: _loginService.esAdmin()
+  });
 
   // Validar si ya inició sesión o no
   // Si no está logueado 
