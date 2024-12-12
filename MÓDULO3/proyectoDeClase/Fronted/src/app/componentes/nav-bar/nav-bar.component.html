@@ -9,4 +9,18 @@
         <li><a routerLink="/registroUsuarios">Registro</a></li>
         <li><a routerLink="/admin">Panel de Control</a></li>
     </ul>
+
+    <!-- Angular nos permite tener estructuras de control de flujo
+        dentro de nuestro HTML -> Directivas de Angular
+        *ngIf -> usar el condicional if en html
+        *ngFor -> utilizar el ciclo for en html 
+    -->
+
+    <!-- si el usuario está logueado se muestre el botón
+        si no esta logueado no se muestra 
+    -->
+    <button *ngIf="isLogged" class="btn btn-info">Cierre de sesión</button>
+
 </nav>
+
+
