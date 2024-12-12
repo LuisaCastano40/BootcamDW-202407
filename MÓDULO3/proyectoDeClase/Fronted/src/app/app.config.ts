@@ -6,12 +6,13 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 // Necesito conectarme con un backend -> nos lo permite el clienteHTTP
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
 // Importar la dependencia para gestionar mensajes de respuesta
 import { provideToastr } from 'ngx-toastr';
 // Importamos proveedor de animaciones
 import { provideAnimations } from '@angular/platform-browser/animations';
-
+// Importamos interceptor para usar en las peticiones
+import { authInterceptor } from './interceptors/auth.interceptor';
 
 import { routes } from './app.routes';
 
@@ -20,8 +21,11 @@ export const appConfig: ApplicationConfig = {
     // Proveedores que permiten funcionamientos
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
+
     // este proveedor es el que permite que hagamos peticiones al back
-    provideHttpClient(),
+    // las peticiones utilizan interceptor
+    provideHttpClient(withInterceptors([authInterceptor])),
+
     // este proveedor es para mensajes de respuesta
     provideToastr({
       timeOut: 2000, //tiempo de duración en pantalla

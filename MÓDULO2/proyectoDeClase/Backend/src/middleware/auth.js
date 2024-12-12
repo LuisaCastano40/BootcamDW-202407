@@ -13,6 +13,8 @@ function auth(requiredRole) {
         // VERIFICACIÓN 1: Existencia del token -------------------------
         // Acá estamos accediendo al token generado en caso de que haya
         let token = request.headers['authorization'];
+
+        
         console.log('Token obtenido de la cabecera ' + token);
 
         if(!token){
